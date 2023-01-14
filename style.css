@@ -1,143 +1,145 @@
-body {
-    margin: 0;
-    background-color: rgb(255, 255, 255);
+
+* {
+    margin: 0px;
+}
+.nav {
+    border: 3px solid rgb(255, 0, 0);
+    text-align: center;
+    background-image: white;
+    min-width: 320px;
+    height: 100vh;
 }
 
-.header {
-    border: 3px solid blue;
-    max-width: 100%;
-}
-
-.content {
-    border: 3px solid rgb(255, 30, 255);
-    
-   
-}
-
-.primercontenido {  
-    float: right;
-}
-
-
-
-.gradient {
-    height: 200px;
-    background: linear-gradient(rgba(255,255,255,0)) 0%; rgb(255,255,255) 70%);
-}
-
-.logo {
-    width: 169px;
-    border: 3px solid red;
-    padding: 11px;   
-}
-
-.buttons {
+/* tamaño barra navegación  */
+.main {
     display: flex;
-    width: 58vh;
-    border: 3px solid red;
-    text-align: center;
-    padding-top: 17px;
-
- 
-  color: black;
-  font-size: 16px;
-  padding: 16px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-  display: inline-block;
-  
+    justify-content:space-evenly;
+    align-items: center;
+    height: 5vh;
+    border: 3px solid blue;  
 }
 
-.config-item:hover {
-    background-color: black;
-    color: white;
+
+.caja2 {
+    padding-left: 10%;
+    color: #0087ca;
+
+}
+
+
+.Logo { 
+    height: auto;
+    max-width: 10%;
+}
+
+
+/* carateristicas del boton */
+.Button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e60023;
+    border: none;
+    border-radius: 15px;
+}
+
+
+.Button3 {
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    background-color: #efefef;
+    border: none;
+    border-radius: 15px;
+
+}
+.texto {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #272727;
-    font-size: 50px;
-    height: 100%;
-    font-weight: bold;
-    flex:content;
-    background-color: #f1f1f1;
+    font-weight:bold;
+    color: rgb(165, 165, 165);
+    padding: 10px;
+}
+
+
+.Button:hover {
+    background-color: #a3081a
     
 }
 
-.fontcenter {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 60px;
-    color: black;
-    height:  100%;
-    font-weight: bold;
+
+.Button3:hover {
+    background-color: #d6d6d6
+    
 }
 
-.parte1 {
-    width: 100%;
-    border: 3px solid brown;
-    background-color: #fffd92;
-}
 
-.secc2 {
-    width: 60px;
-    border: 4px solid green;
-}
-
-.parte3 {
-    width: 40px;
-    border: 4px solid purple;
-    text-align: center;
-}
-.menu {
-    width: 300vh;
-    border: 3px solid rgb(25, 255, 17);
-    height: 90vh;
-}
-.cajaprincipal{
-    width: 60vh;
-    border: 3px solid rgb(25, 255, 17);
-    position: absolute;
-    text-align: center;
-}
-
-.sst {
-    padding-bottom: 100%;
+.Botonesgr {
+    display: flex;
+    justify-content: flex-end;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.terms {
+/* seccion 2 */
+.seccion2 {
+    display:flex;
     align-items: center;
+    justify-content:  center;
+    height: 5vh;
+    border: 3px solid rgb(255, 0, 255);
+    padding: 10% 10%; 
+}
+.textocentral {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration:none;
+    color: black;
 }
 
 
 
 
+
+/*  QUERY  */
+@media (max-width:769px) {
+    .Botonesgr {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .Button {
+        display: none;
+    }
+    .Button3 {
+        display: none;
+    }
+
+    .Logo { 
+        height: auto;
+        max-width: 25%;
+    }
+    .caja2 {
+        font-size: 10%;
+        display: flex;
+        font-size: 100%;
+    }
+
+}
+
+
+@media (min-width:769px) {
+    .caja2 {
+        padding-left: 30%;
+        color: #0087ca;
+    }
+}
