@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Java connection -->
-<script src="script.js"></script>
+
     <!-- Css connection  -->
     <link rel="stylesheet" href="style.css">
     <!-- Bootstraps link -->
@@ -24,7 +23,7 @@
                     <h2>Banco Login</h2>
                     <div class="input-box">
                         <ion-icon name="person-outline"></ion-icon>
-                        <input type="name" name="yname" required autocomplete="off">
+                        <input type="name" name="yname" class="inName" required autocomplete="off">
                         <label for="">Nombre</label>
                         </div>
                     <div class="input-box">
@@ -36,7 +35,8 @@
                         <label for=""> <input  type="checkbox" > Remember Me <a href="#"> Forget password</a></label>
                     </div>
                 </form>            
-            <button name="Logenter" onclick="showBienvenido()">Log in</button>
+            <button name="Logenter" class="entrada">Log in</button>
+             <!-- onclick="showBienvenido()" -->
             <div class="register">
                 <p>No tienes una cuenta? <a href="#">Regístrate</a></p>
             </div>
@@ -48,25 +48,27 @@
     </section>
     <!-- Caja bienvenida  -->
     <article>
-    <div class="introBienvenido" >
+    <div class="introBienvenido"  >
         <h1 id="opciones">Bienvenido</h1>
         <h2>¿Que desea hacer?</h2>
         <div class="btn">
             <button name="btnSaldo" id="btnSaldo">Consultar Saldo</button>
             <button name="btnIngresar" id="btnIngresar">Ingresar Monto</button>
             <button name="btnRetirar" id="btnRetirar">Retirar Monto</button>
-    <div id="error"> Esta mal</div>
+      <!--   <div id="error"> Esta mal</div> -->
         </div>
     </div>
     </article>
 
 
-    
+ 
+</main>
+<script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Java connection -->
+
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<!-- Bootsrap script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</main>
 </body>
 </html>
